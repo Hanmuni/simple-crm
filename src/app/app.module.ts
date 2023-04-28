@@ -19,6 +19,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -45,7 +47,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     MatDatepickerModule,
     MatNativeDateModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    MatProgressBarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
