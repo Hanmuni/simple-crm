@@ -20,6 +20,13 @@
 
   <div>
     <mat-form-field class="mr-16 fullwidth">
+      <mat-label>Email</mat-label>
+      <input [disabled]="loading" matInput [(ngModel)]="user.email">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field class="mr-16 fullwidth">
       <mat-label>Birthday</mat-label>
       <input [disabled]="loading" matInput [matDatepicker]="picker1" [(ngModel)]="birthday">
       <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>

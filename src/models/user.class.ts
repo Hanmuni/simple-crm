@@ -1,6 +1,7 @@
 export class User {
     firstname: string;
     lastname: string;
+    email: string;
     birthday: number;
     address: string;
     houseNumber: number;
@@ -10,6 +11,7 @@ export class User {
     constructor(obj?: any) {
         this.firstname = obj ? obj.firstname : '';
         this.lastname = obj ? obj.lastname : '';
+        this.email = obj ? obj.email : '';
         this.birthday = obj ? obj.birthday : '';
         this.address = obj ? obj.address : '';
         this.houseNumber = obj ? obj.houseNumber : '';
@@ -21,6 +23,7 @@ export class User {
         return {
             firstname: this.firstname,
             lastname: this.lastname,
+            email: this.email,
             birthday: this.birthday,
             address: this.address,
             houseNumber: this.houseNumber,

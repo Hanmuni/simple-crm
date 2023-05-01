@@ -13,7 +13,7 @@
         <th>City</th>
       </tr>
 
-      <tr *ngFor="let user of users">
+      <tr *ngFor="let user of users" [routerLink]="['/user/' + user.firebaseId]">
         <td>{{ user.firstname }} {{ user.lastname }}</td>
         <td>{{ user.email }}</td>
         <td>{{ user.city }} </td>
