@@ -1,0 +1,25 @@
+.user-profile-header {
+  min-height: 250px;
+  background-color: deeppink;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+  }
+}
+
+.user-details {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
